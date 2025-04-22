@@ -1,0 +1,74 @@
+//1. ::BEFORE SERVE PARA ESTILIZAR OU ADICIONAR ALGO NO COMEÇO DE UM TEXTO
+
+//2. ::AFTER SERVE PARA ESTILIZAR OU ADICIONAR ALGO NO FINAL DE UM TEXTO
+
+EXEMPLO:
+
+<h1>Pseudoelementos CSS</h1>
+<h2> ::before e ::after </h2>
+<p class="item 1"> Parágrafo qualquer </p>
+
+CSS:
+
+.item1 ::before {
+                content: "OLÁ"
+}
+
+.item1 ::after {
+               content: "ADEUS"
+}
+
+TEXTO NO FINAL: OLÁ Parágrafo qualquer ADEUS
+
+
+
+//3. ::FIRST-LINE SERVE PARA ESTILIZAR A PRIMEIRA LINHA DE UM TEXTO
+
+EXEMPLO:
+
+<h2>::first-line</h2>
+<p class= item2">Primeira linha do texto. Segunda e terceira linhas do texto.</p>
+
+CSS:
+
+.item2 ::first-line {
+                    font-weight: bold
+}
+
+TEXTO FINAL: Primeira linha do texto. (EM NEGRITO) 
+             Segunda e terceira linhas do texto.
+
+
+
+//4. ::FIRST-LETTER SERVE PARA ESTILIZAR A PRIMEIRA LETRA DA FRASE DE UM TEXTO
+
+EXEMPLO:
+
+<h2>::first-letter</h2>
+<p class= "item3"> Primeira letra </p>
+
+CSS:
+
+.item3 ::first-letter {
+                      font-size: 2rem;
+}
+
+TEXTO FINAL: P(bem maior)rimeira letra
+
+
+//5. ::SELECTION SERVE PARA SELECIONAR O TEXTO COM UMA COR DIFERENTE
+
+EXEMPLO:
+
+<h2>::selection</h2>
+<p class = "item4"> Texto selecionado com cor diferente </p>
+
+CSS:
+
+.item4 ::selection {
+                    background-color: violet;
+                    color: white;
+}
+
+TEXTO FINAL AO SER SELECIONADO FICARÁ COM A COR VIOLETA E A LETRA BRANCA. 
+
