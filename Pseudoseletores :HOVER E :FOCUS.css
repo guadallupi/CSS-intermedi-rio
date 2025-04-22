@@ -1,0 +1,28 @@
+//PSEUDOSELETORES :HOVER E :FOCUS
+
+<body>
+  <p>oi</p>
+  <h1>Pseudoseletores CSS</h1>
+  <h2>:hover e :focus</h2>
+  <div class="buttons">
+    <button>Botão 1</button>
+    <button>Botão 2</button>
+    <button>Botão 3</button>
+    <button>Botão 4</button>
+    <button>Botão 5</button>
+  </div>
+
+//CSS Styles: 
+
+1. PARA FAZER UMA AÇÃO ESPECÍFICA AO PASSAR O MOUSE EM UM BOTÃO, USAMOS A FUNÇÃO SELETORA :hover
+
+button:hover{
+    background-color: rgb(208, 70, 27); // AO PASSAR O MOUSE SOBRE O BOTÃO, ELE FICA COM A COR VERMELHA
+  }
+
+2. PARA FAZER O BOTÃO FICAR COM UM EFEITO AO SER SELECIONADO, USAMOS A FUNÇÃO SELETORA :focus
+
+button:focus{
+    outline: 2px solid rgb(208, 70, 27); //AO SER SELECIONADO O BOTÃO VAI FICAR COM A COR VERMELHA
+  }
+
