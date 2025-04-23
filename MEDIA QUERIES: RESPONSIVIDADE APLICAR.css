@@ -1,0 +1,49 @@
+//COMO APLICAR RESPONSIVIDADE NO CSS:
+
+USAR A SINTAXE: @media (condição, propriedade..)
+
+CSS Exemplos:
+
+@media (max-width: 600px) { //A CONDIÇÃO É PARA UMA TELA DE NO MÁXIMO 600PX
+  h1 {
+     font-size: 4rem; //TAMANHO DO TEXTO DO h1
+  }
+  p {
+    font-size: 2rem; //TAMANHO DO TEXTO DO p
+  }
+  .imagesContainer {
+    flex-direction: column; // DISPOSIÇÃO DAS IMAGENS EM COLUNA
+  }
+  .image1, .image2 { // AS IMAGENS OCUPAM 100vw DA TELA
+    width: 100vw;
+  }
+} 
+
+CSS EXEMPLOS:
+
+@media(min-width: 600px) and (max-width: 800px) { //TELAS COM LARGURA MÍNIMA DE 600PX E COM LARGURA MÁXIMA DE 800PX
+   body {
+     background-color: blue; // O FUNDO DA TELA FICARÁ AZUL
+   }
+                                                }
+
+//OS MAIS USADOS: @max-width / @max-height / @min-width / @min-height
+
+//ORIENTAÇÃO DA TELA: PORTRAIT OU LANDSCAPE(horizontal)
+
+EXEMPLO: 
+@media (orientation: portrait) {
+  body {
+    background-color: red;
+  }
+}
+
+//BREAKS POINTS:
+
+1. TELAS GRANDES: 1200PX
+
+2. TABLETS: ENTRE 700PX E 800PX
+
+3. CELULARES: ATÉ 700PX
+
+        
