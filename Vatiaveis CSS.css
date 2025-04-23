@@ -1,0 +1,23 @@
+//VARIÁVEIS SÃO USADAS PARA MODIFICAR UM GRANDE NÚMERO DE OBJETOS NUM SITE JÁ CRIADO:
+
+<body>
+  <h1>Variáveis CSS</h1>
+  <div class="buttons">
+    <button>Botão 1</button>
+    <button>Botão 2</button>
+    <button>Botão 3</button>
+    <button>Botão 4</button>
+    <button>Botão 5</button>
+  </div>
+
+CSS: 
+
+:root {
+  --primary-color: rgb(245, 124, 88); //:root = VARIÁVEL (COLOCA NO INÍCIO DO CSS)
+  --secondary-color: rgb(208, 70, 27);
+  --border-radius: 10px;
+}
+
+button {
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius-base);
