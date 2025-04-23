@@ -1,0 +1,63 @@
+//1. COMBINADOR DESCENDENTE: ELEMENTO PAI + ELEMENTO FILHO
+
+      <div>
+        <p>Descrição 2 do título 3.</p>
+      </div>
+
+TODOS OS ELEMENTOS <P> (FILHOS) DENTRO DE UMA <DIV> SERÃO SELECIONADOS PELO ELEMENTO PAI <DIV>:
+
+CSS:
+
+div p{
+  background-color: red; //O TEXTO Descrição 2 do título 3. VAI FICAR COM FUNDO VERMELHO
+  }
+
+//2. COMBINADOR FILHO:
+
+       <div>
+        <p>Descrição 3 do título 4.</p>
+      </div>
+
+REGRAS SE APLICAM PARA OS <P> DIRETAMENTE DENTRO DE UMA <DIV>:
+
+CSS:
+
+section > p{
+  background-color: blue; //O TEXTO Descrição 3 do título 4. VAI FICAR COM O FUNDO AZUL
+}
+
+//3. COMBINADOR ADJACENTE:
+
+<h2>Título 3</h2>
+      <p>Exemplo 2.</p>
+      <P>Exemplo 3.</p>
+
+AS REGRAS SE APLICAM PARA O ELEMENTO ADJACENTE AO ELEMENTO PRA QUE SE QUER APLICAR A REGRA. NO EXEMPLO, O <p> é adjacente do <h2>.
+
+CSS:
+
+h2 + p{
+    background-color: pink; //SOMENTE O TEXTO Exemplo 2 VAI FICAR COM O FUNDO ROSA PORQUE O SEU <P> É ADJACENTE AO <h2>
+  }
+
+//4. COMBINADOR IRMÃO-GERAL: 
+
+  <section class="section3">
+      <h2>Título 3</h2>
+      <p>Exemplo 3.</p>
+
+  O ELEMENTO <h2> É DO MESMO NÍVEL HIERÁRQUICO QUE O <p>, OU SEJA, SÃO IRMÃOS (FAZEM PARTE DE UMA <section>). ENTÃO, A REGRA DO IRMÃO-GERAL VALE PARA O IRMÃO TAMBÉM.
+
+  CSS:
+
+  .section3{
+  h2 ~ p{
+    background-color: orange; //OS TEXTOS Título 3 e Exemplo 3 FICARÃO COM O FUNDO LARANJA.
+  }
+}
+
+  
+  
+  
+
+
