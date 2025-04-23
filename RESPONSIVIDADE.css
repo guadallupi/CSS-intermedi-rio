@@ -1,0 +1,20 @@
+//1. UNIDADES RELATIVAS (TEXTOS, TAMANHOS..):
+
+USAR TEXTOS COM MEDIDA EM REM EM VEZ DE PX. (para transformar em REM, dividir o valor em PX por 16PX)
+
+
+//2. FLEXBOX RESPONSIVO: usar flex-wrap: wrap!
+
+CSS:
+
+.container {
+           display: flex;
+           flex-wrap: wrap;
+}
+
+//3. IMAGENS RESPONSIVAS:
+
+imagemGuada. {
+             max-width: 100%;
+}
+
